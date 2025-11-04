@@ -1,0 +1,86 @@
+*{
+    background-color: rgb(29, 30, 32);
+    color: white;
+}
+body{
+    text-align: center;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header{
+    display: block;
+}
+nav{
+    display: flex  ;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+
+   width: 20%;
+   padding: 5px !important;
+    list-style: none;    
+    display: flex;    
+    gap: 1%;
+    justify-content: start;  
+    justify-content: space-between !important;
+    align-items: start;
+   
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project_heading{
+
+    background-color: rgb(54, 52, 52);
+}
+.hi{
+    width: 80vw;
+    margin-bottom: auto;
+    text-align: left;
+    
+}
+p{
+    text-align: left;
+    width: 80vw;
+    margin-top: auto;
+}
+.blogholder {
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog{
+    border-radius: 4%;
+    margin: 1rem;
+    background-color: rgb(54, 52, 52);
+    width: 80vw;
+    height: 50vh;
+}
+footer{
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+.cc{
+    display: flex;
+    justify-content: center;
+    border: 3px solid white;
+    padding: 1rem;
+    margin-top: auto;
+}
+.detail{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: auto;
+
+}
