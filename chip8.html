@@ -1,11 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="chip8.css">
 </head>
+
 <body>
     
+     <header>
+        <nav>
+           <div class="name">
+                <h1 class="logo">Yuvraj's Blogs</h1>
+            <img class= "img" src="./img.jpg">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <div class="article">
+
+        <h1 class="head">My Chip-8 Project</h1>
+
+        <div class="content">
+            <h2 class="headIntro">Introduction</h2>
+            <p  id = "para" class="intro">
+                Few weeks back i completed my Chip-8 Project , it was fun and learned a lot as i learned how power an
+                array
+                could be .
+                It was challlenging as a begineer to understand the documentation of it but somehow i managed to feed it
+                in my
+                brain. I also learned
+                how Simple DirectMedia Layer 3(SDL3) and how important is logging(The Function which show if an error
+                has
+                occured)
+
+                In addition i would say it was fun to learn how Emulation actually works.</p>
+        </div>
+
+        <div class="content">
+            <h2 class="headArray">Takeaway From Array</h2>
+            <p  id = "para" class="array">
+                One of the big takeaways was just how powerful arrays really were. They seemed like a basic container to
+                hold
+                data in, but by the time I was using them to represent things like RAM, the stack, and even instructions
+                themselves, it clicked, arrays were
+                the basis for everything: every instruction Chip-8 would fetch and decode from memory stored in an
+                array, the
+                stack was just
+                another array handling return addresses, even the registers could be thought of as a small array of
+                values. It
+                was like arrays
+                quietly controlled the entire emulation behind the scenes.</p>
+        </div>
+        <div class="content">
+            <h2 class="headSDL">Simple DirectMedia Layer 3(SDL3)</h2>
+            <p  id = "para" class="SDL">
+                Then came SDL, which really made me appreciate the more graphical side of things. I did my rendering of
+                the
+                Chip-8
+                display in SDL3, and after realizing how it works, it did a pretty smooth job. But the best part was to
+                see this
+                emulator finally come to life: tiny pixels flickering into shapes and animations. For drawing pixels, I
+                used XOR
+                logic,
+                and that was interesting: instead of just turning pixels on or off, XOR would flip them , if a pixel was
+                already
+                on,
+                it turned off, creating that classic Chip-8 “sprite flicker” effect. A simple trick, but kind of magical
+                when it
+                finally
+                worked.
+            </p>
+        </div>
+        <div class="content">
+            <h2 class="headLogging">How Important Logging Is</h2>
+            <p  id = "para" class="logging">
+                Logging also proved to be a lifesaver. Early on, I had a frustrating problem in which sound wasn't
+                playing
+                properly,
+                and I had absolutely no clue what was going wrong. The moment I started to log every little function
+                call and
+                error,
+                finally I could see where the problem was hiding. It turned out my sound flag wasn't being updated
+                properly ,something
+                I would have missed if those logs didn't show where exactly, and why, it failed.
+            </p>
+        </div>
+        <div class="content">
+            <h2 class="headSound">Implimenting Audio</h2>
+            <p  id = "para" class="sound">
+                Sound implementation itself was another challenge. Getting that to work every frame while keeping timing
+                correct
+                took a
+                few late nights and plenty of “why isn't this working” moments. But, finally, hearing that first short
+                beep 
+                the real
+                Chip-8 sound was incredibly satisfying.
+            </p>
+        </div>
+        <div class="content">
+            <h2 class="headSummary">Summary</h2>
+            <p id = "para"  class="summarry">
+                In the end, this emulator taught me much more than just technical stuff: it showed me how small concepts
+                like arrays,
+                bitwise operations, and simple APIs can go together to recreate surprisingly complex things. And that
+                feeling seeing
+                your code give life to something makes all struggles totally worth it.
+            </p>
+        </div>
+
+        
+        <footer>
+            <br>
+            <div class="detail">
+                <h5>Email: byyuvraj406@gmail.com </h5>
+                <h5> Linkdin: </h5>
+                <h5>Twitter:</h5>
+            </div>
+            <h5 class="cc">© 2025 Yuvraj's Blog ·</h5>
+            
+        </footer>
+    </div>
 </body>
+
 </html>
