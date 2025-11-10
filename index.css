@@ -29,6 +29,10 @@ nav ul{
     align-items: start;
    
 }
+.img{
+    width: 1rem;
+    height: 1rem;
+}
 .intro{
     display: flex;
     flex-direction: column;
@@ -84,3 +88,4 @@ footer{
     margin-bottom: auto;
 
 }
+
