@@ -118,7 +118,7 @@ footer{
             margin: 0;
         }
 }
-@media(max-width: 600px){
+@media(max-width: 800px){
     .name{
         scale: 0.74;
         width: 4rem;
@@ -126,4 +126,8 @@ footer{
     .detail{
         width: 20rem;
     }
+    ul{
+        width: 12rem !important;
+    }
 }
+
