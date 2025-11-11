@@ -44,6 +44,7 @@ nav ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .project_heading{
 
@@ -93,4 +94,36 @@ footer{
     justify-content: space-evenly;
     margin-bottom: auto;
 
+}
+@media (max-width: 390px) {
+        
+        nav{
+            display: flex;
+            justify-content: space-around;
+        }
+        .name{
+            
+            width: 8rem !important;
+          
+        }
+        
+        ul{
+            scale: 0.55;
+            width: 35rem !important;
+            display: flex;
+            justify-content: space-between !important;
+        }
+        .logo{
+            scale: 0.65;
+            margin: 0;
+        }
+}
+@media(max-width: 600px){
+    .name{
+        scale: 0.74;
+        width: 4rem;
+    }
+    .detail{
+        width: 20rem;
+    }
 }
